@@ -91,9 +91,31 @@ const main = Object.assign({}, obj1, obj2)  //target => {} , source => obj1, obj
 
 
 
-console.log(bumbleUser)
-console.log(Object.keys(bumbleUser))
-console.log(Object.values(bumbleUser))
-console.log(Object.entries(bumbleUser))
+// console.log(bumbleUser)
+// console.log(Object.keys(bumbleUser))
+// console.log(Object.values(bumbleUser))
+// console.log(Object.entries(bumbleUser))
 
-console.log(bumbleUser.hasOwnProperty('name'))  // Gives output in boolean
+// console.log(bumbleUser.hasOwnProperty('name'))  // Gives output in boolean
+
+
+
+//DESTRUCTURING OF OBJECTS
+const course = {
+    courseName: "Code With Swati",
+    price: "1000",
+    courseInstructor: "Swati"
+}
+
+// course.courseInstructor
+//During DESTRUCTURING OF OBJECTS we use {}
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor)
+console.log(instructor)
+
+
+//In REACT:
+// const navbar = ({company})
+// navbar(company = "BlackRock")
