@@ -18,7 +18,7 @@ if(true){
 // console.log(b)
 // console.log(c)
 
-
+//-----------------------------------------------------------
 
 //NESTED SCOPES
 
@@ -45,7 +45,7 @@ if(true){
 }
 // console.log(username) 
 
-
+//-----------------------------------------------------------
 
 // In 2 ways function can be executed
 
