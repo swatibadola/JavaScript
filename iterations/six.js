@@ -10,6 +10,7 @@
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // //FILTER returns value whereas FOR-EACH does not. FILTER would print nothing but not undefined
+//FILTER - Is jo true hoga woh hi pass hoga
 // const newNums = myNums.filter((num) => num > 5)
 // console.log(newNums);
 
