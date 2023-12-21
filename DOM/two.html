@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black; color: cornsilk;">
+    <div class="weekdays">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+    </div>
+</body>
+<script>
+    const weekDays = document.querySelector('.weekdays')
+    // console.log(weekDays);
+    // console.log(weekDays.children);  //This gives an HTML Collection
+    // console.log(weekDays.children[2]);  //To access any element
+    // console.log(weekDays.children[2]);  //To access any element
+    // console.log(weekDays.children[2].innerHTML);  //To access any element
+
+    // for (let i = 0; i < weekDays.children.length; i++) {
+    //     console.log(weekDays.children[i].innerHTML);        
+    // }
+
+    // STYLING
+
+    weekDays.children[1].style.color = "yellow"
+    // console.log(weekDays.firstElementChild)
+    // console.log(weekDays.lastElementChild)
+    
+
+    const dayTwo = document.querySelector('.day')
+    // console.log(dayTwo)
+    // console.log(dayTwo.parentElement)
+    // console.log(dayTwo.nextElementSibling)
+
+
+    // NODELIST
+    console.log("NODES: ", weekDays.childNodes);
+</script>
+</html> 
