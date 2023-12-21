@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black; color: rgb(43, 35, 5);">
+    
+</body>
+<script>
+    const peta = document.createElement('p')
+    console.log(peta);
+
+    peta.className = "main"
+    peta.id = Math.round(Math.random() * 100 + 1)
+    peta.setAttribute("title", "Ironman")
+    peta.style.backgroundColor = "pink"
+    peta.style.padding = "10px"
+    peta.style.borderRadius = "10px"
+    // peta.innerText = "Marvel Studios"
+    const text = document.createTextNode("Marvel Studios")
+    peta.appendChild(text)
+
+    // Adding text on web with all modifications done above
+    document.body.appendChild(peta)
+
+</script>
+</html>
