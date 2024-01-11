@@ -1,7 +1,7 @@
 #Projects related to DOM
 
 ##Project link
-[Click here]
+[Click here](https://github.com/swatibadola/JavaScript/blob/1036b4846ca8ef2307b1a24896fdb538f4a53c12/Projects/project01.html)
 
 #Solution Code
 #Project 1
