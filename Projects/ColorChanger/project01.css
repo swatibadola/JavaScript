@@ -20,8 +20,8 @@ a:hover{
     border-radius: 8px;
     transition: 0.4s;
     transition-delay: 0.01s;
-    background-color: rgb(233, 196, 239);
-    border: 2px solid rgb(233, 196, 239);
+    background-color: rgb(204, 239, 196);
+    border: 2px solid rgb(204, 239, 196);
     /* border: 1px solid rgba(240, 255, 255, 0.219); */
 }
 
@@ -37,21 +37,28 @@ nav{
     border: 2px solid black;
     padding: 21px 21px;
     cursor: pointer;
+    color: black;
     /* margin: 0px 19px; */
 }
 #white{
     background-color: white;
+    border: 2px solid white;
     margin-left: 30px;
 }
 #grey{
     background-color: grey;
+    border: 2px solid grey;
+
 }
 #yellow{
     background-color: yellow;
+    border: 2px solid yellow;
 
 }
 #blue{
     background-color: blue;
+    border: 2px solid blue;
+
 }
 h1{
     padding: 40px 42px;
