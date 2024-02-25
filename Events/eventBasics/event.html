@@ -8,18 +8,76 @@
 <body>
     <h1>Pictures</h1>
     <div>
-        <ul>
+        <ul id="images">
             <li><img width="200px" id="coffee" src="https://i.pinimg.com/564x/5b/ac/02/5bac02a523df792c7e4e2fa6be49c354.jpg" alt="pinterest"></li>
             <li><img width="200px" id="swimming" height="220px" src="https://i.pinimg.com/564x/c2/97/9a/c2979ad1538363a393adfecbb8313acc.jpg" alt="pinterest"></li>
             <li><img width="200px" id="cat" height="235px" src="https://i.pinimg.com/564x/e7/71/f6/e771f6581c14e35ed4e17fc81bf9312e.jpg" alt="pinterest"></li>
             <li><img width="200px" id="krishna" height="282px" src="https://i.pinimg.com/564x/ee/ee/df/eeeedf180a3703c4bf0a808d859c9a27.jpg" alt="pinterest"></li>
-            <li><a style="color: aliceblue;" id="google"  href="https://google.com">Google</a></li>
+            <li><a style="color: rgb(5, 18, 30);" id="Google"  href="https://google.com">Google</a></li>
         </ul>
     </div>
 </body>
 <script>
-    document.getElementById('cat').addEventListener('click', function(){
-        alert("Cat clicked again")
+    // //.onclick gives less features compared to addEventListener()
+    // document.getElementById('cat').onclick = function(){
+    //     alert("Cat clicked")
+    // }
+
+    //Approaches to use click event
+    // 1) .onclick  2) using.addEventListener - LATEST 3) attachEvent() - NO LONGER SUPPORTED BY INTERNET EXPLORER(IE) 4).on - WAS USED IN JQUERY
+
+    // document.getElementById('cat').addEventListener('click', function(){
+    //     alert("Cat clicked again")
+    // })
+
+    // document.getElementById('cat').addEventListener('click', function(e){
+    //     console.log(e);
+    // })
+
+    //type , timestamp ,  preventDefault
+    //target, toElement, srcElement, currentTarget
+    // altkey, ctrlkey, shiftkey, keycode - CAN BE USED FOR CREATING A PROJECT TO CHECK THE TYPING SPEED 
+
+    // ----------------------------------------------------
+
+    //EVENT BUBBLING & EVENT CAPTURING
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked on the ul");
+    //     e.stopPropagation()
+    // }, false)
+    // document.getElementById('swimming').addEventListener('click', function(e){
+    //     console.log("swim clicked");
+    // }, false)
+
+    // ----------------------------------------------------
+
+    // //USING preventDefault()
+    // document.getElementById('Google').addEventListener('click', function(e){
+    //     console.log("google clicked");
+    //     e.preventDefault()
+    // }, false)
+
+    // ----------------------------------------------------
+
+    //HOW TO REMOVE AN IMAGE JUST BY CLICKING ON IT
+
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.parentNode);
+    //     let removeIt = e.target.parentNode
+    //     removeIt.remove()
+    // })
+    
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id)
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
     })
+
+
+
 </script>
 </html>
