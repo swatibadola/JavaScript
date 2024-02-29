@@ -20,7 +20,7 @@
 
     //How to stop an event even after applying setTimeout()
     const changeMe = setTimeout(changeText, 2000);
-    document.querySelector('#stop').addEventListener('click', function(){
+    document.querySelector('#start').addEventListener('click', function(){
         clearTimeout(changeMe)
         console.log("EVENT STOPPED")
     })
