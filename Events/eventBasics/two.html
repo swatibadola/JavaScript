@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning JavaScript With Swati</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const Say = function(){console.log("Swati");}
+    // setTimeout(Say, 2000);   //NOTE: Give reference of the function not execution.
+
+    // document.querySelector('h1').innerHTML = "Best JS lectures"
+
+    const changeText = function(){document.querySelector('h1').innerHTML = "Best JS lectures"}
+    setTimeout(changeText, 2000);
+
+    //How to stop an event even after applying setTimeout()
+    const changeMe = setTimeout(changeText, 2000);
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("EVENT STOPPED")
+    })
+</script>
+</html>
