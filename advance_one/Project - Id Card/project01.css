@@ -1,0 +1,28 @@
+.container{
+    border: 2px solid black;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: auto;
+    width: 400px;
+    height: 450px;
+
+}
+.logo{
+    border: 2px solid purple;
+}
+h1{
+    border: 1px solid red;
+    margin: auto;
+    /* justify-items: center; */
+    width: 67px;
+    display: flex;
+}
+.image{
+    border: 1px solid black;
+    /* text-decoration: none; */
+    width: 55px;
+    margin: auto;
+    padding: 44px 30px;
+    margin-top: 30px;
+    border-radius: 78px;
+}
