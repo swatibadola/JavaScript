@@ -1,5 +1,5 @@
 # javascript and Classes
-
+JavaScript has a prototypial behaviour. Never gives up and keeps searching till it gets a null value.
 ## OOP
 
 ### Object
