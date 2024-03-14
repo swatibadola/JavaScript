@@ -1,3 +1,6 @@
+// this -> Tells us the CURRENT EXECUTION CONTEXT
+
+
 function multipleOf5(num){
     return num*5
 }
