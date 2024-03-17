@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures & Lexical</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.642);">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    //LEXICAL SCOPING
+    // function outer(){
+    //     let username = "swati"
+    //     function inner(){
+    //         let secret = "bkcsdnvk"
+    //         console.log("FIRST CHILD", username);    //ACCESSED
+    //     }
+    //     function innerTwo(){
+    //         console.log("SECOND CHILD", username);   //ACCESSED
+    //         console.log("1st child", secret);  //NOT ACCESSED
+    //     }
+    //     // console.log("1st child", secret);   // NOT ACCESSED
+    //     inner()   //ACCESSED
+    //     innerTwo()   //ACCESSED
+    //     // console.log("PARENT", username);   //ACCESSED
+
+    // }
+    // outer()
+    // console.log("TOO OUTER", username);
+
+    //CLOSURE
+
+    // function makefunc(){
+    //     const name = "Mozilla";
+    //     function displayName(){
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makefunc();
+    // myFunc();
+</script>
+<script>
+    //APPLICATION OF CLOSURE CONCEPT
+
+
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = `orange`
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = `green`
+    // }
+
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor = `${color}`
+
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+
+    document.getElementById('orange').onclick = clickHandler("orange")
+    document.getElementById('green').onclick = clickHandler("green")
+</script>
+</html>
